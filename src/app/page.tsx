@@ -76,30 +76,31 @@ export default function Page() {
             <p className="text-sm font-semibold">Designland - worksop</p>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10.7}>
-            <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[560px]">
-              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
-                <img src="/event-1.jpg" alt="Aquib Wani" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Aquib wani</span>
+            <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
+              {/* Asli Creativity stage — hero, 2×2 */}
+              <div className="relative h-44 md:h-auto col-span-2 md:col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-muted">
+                <img src="/event-4.jpg" alt="Asli Creativity" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Asli Creativity</span>
               </div>
-              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
-                <img src="/event-2.jpg" alt="Event Photos" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Event Photos</span>
+              {/* Aaquib Wani — tall portrait beside hero */}
+              <div className="relative h-40 md:h-auto col-span-1 md:col-span-1 md:row-span-2 rounded-xl overflow-hidden bg-muted">
+                <img src="/event-1.jpg" alt="Aaquib Wani" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Aaquib Wani</span>
               </div>
-              <div className="relative h-48 md:h-auto col-span-2 md:col-span-1 md:row-span-2 rounded-xl overflow-hidden bg-muted">
-                <img src="/event-3.jpg" alt="Event Photos" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Event Photos</span>
+              {/* Audience — bottom left */}
+              <div className="relative h-40 md:h-auto col-span-1 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/event-3.jpg" alt="Audience" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">In the Room</span>
               </div>
-              <div className="relative h-40 md:h-auto col-span-2 md:col-span-2 md:row-span-1 rounded-xl overflow-hidden bg-muted">
-                <img src="/event-4.jpg" alt="Event Photos" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Event Photos</span>
-              </div>
-              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
-                <img src="/event-5.jpg" alt="Asli VIP" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Asli VIP</span>
-              </div>
-              <div className="relative h-40 md:h-auto col-span-1 md:col-span-2 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+              {/* Goodies — bottom middle */}
+              <div className="relative h-40 md:h-auto col-span-1 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-6.jpg" alt="Goodies" className="w-full h-full object-cover" />
                 <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Goodies</span>
+              </div>
+              {/* VIP badge — bottom right */}
+              <div className="relative h-40 md:h-auto col-span-2 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/event-5.jpg" alt="Asli VIP" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Asli VIP</span>
               </div>
             </div>
           </BlurFade>
