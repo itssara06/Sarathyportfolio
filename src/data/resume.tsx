@@ -11,6 +11,7 @@ import { Maze } from "@/components/ui/svgs/maze";
 import { Lookback } from "@/components/ui/svgs/lookback";
 import { OptimalWorkshop } from "@/components/ui/svgs/optimalWorkshop";
 import { Dovetail } from "@/components/ui/svgs/dovetail";
+import { Dribbble } from "@/components/ui/svgs/dribbble";
 
 export const DATA = {
   name: "Sarathy",
@@ -65,6 +66,12 @@ export const DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/sarathy06/",
         icon: Icons.linkedin,
+        navbar: true,
+      },
+      Dribbble: {
+        name: "Dribbble",
+        url: "https://dribbble.com/sarathy06",
+        icon: Dribbble,
         navbar: true,
       },
       // X: {
