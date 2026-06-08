@@ -19,7 +19,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Product designer | Healthcare B2B, Enterprise SaaS | Part-Time Freelancer",
+    "Product designer | UX Designer | Part-Time Freelancer",
   summary:
     "Product Designer with 2+ years of experience designing end-to-end digital products across healthcare (B2B), enterprise (SaaS) domains. I specialize in transforming complex business requirements into intuitive, user-centered experiences that drive both user satisfaction and business outcomes.",
   avatarUrl: "/me.png",
