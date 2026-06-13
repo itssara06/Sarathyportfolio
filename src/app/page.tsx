@@ -27,7 +27,7 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <p className="text-muted-foreground max-w-[560px] text-sm md:text-base leading-relaxed">
+                <p className="text-muted-foreground max-w-[560px] text-sm leading-relaxed">
                   Product Designer with 2+ years of experience designing end-to-end digital products across healthcare (B2B), enterprise (SaaS) domains. I specialize in transforming complex business requirements into intuitive, user-centered experiences that drive both user satisfaction and business outcomes.
                 </p>
               </BlurFade>
