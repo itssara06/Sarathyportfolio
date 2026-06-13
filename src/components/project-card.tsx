@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
@@ -56,48 +55,41 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const dest = slug ? `/projects/${slug}` : href || "#";
+
   return (
-    <div
+    <Link
+      href={dest}
       className={cn(
-        "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
+        "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 hover:ring-muted transition-all duration-200",
         className
       )}
     >
-      <div className="relative shrink-0">
-        <Link href={slug ? `/projects/${slug}` : "#"} className="block">
-          {video ? (
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-64 md:h-80 object-cover"
-            />
-          ) : image ? (
-            <ProjectImage src={image} alt={title} />
-          ) : (
-            <div className="w-full h-64 md:h-80 bg-muted" />
-          )}
-        </Link>
+      <div className="shrink-0">
+        {video ? (
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-64 md:h-80 object-cover"
+          />
+        ) : image ? (
+          <ProjectImage src={image} alt={title} />
+        ) : (
+          <div className="w-full h-64 md:h-80 bg-muted" />
+        )}
       </div>
       <div className="p-6 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-2">
-          <div className="flex flex-col gap-1">
-            <h3 className="font-semibold">{title}</h3>
-          </div>
-          <Link
-            href={slug ? `/projects/${slug}` : "#"}
-            className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            aria-label={`Open ${title}`}
-          >
-            <ArrowUpRight className="h-4 w-4" aria-hidden />
-          </Link>
+          <h3 className="text-base font-semibold leading-tight">{title}</h3>
+          <ArrowUpRight className="size-4 shrink-0 text-muted-foreground" aria-hidden />
         </div>
-        <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+        <div className="text-sm flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
           <Markdown>{description}</Markdown>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
