@@ -47,6 +47,28 @@ export const DATA = {
     { name: "Optimal Workshop", icon: OptimalWorkshop },
     { name: "Dovetail", icon: Dovetail },
   ],
+  skillCategories: [
+    {
+      label: "Skills",
+      items: [
+        "UX Research & Stakeholder Interview",
+        "Collaborative Problem Solving",
+        "UI/Visual Design",
+        "Wireframing & High-Fidelity Prototyping",
+        "Design Systems",
+        "Interaction Design",
+        "Usability Testing",
+      ],
+    },
+    {
+      label: "AI Tools I use to visualize ideas.",
+      items: ["Lovable.ai", "Google Stitch", "Bolt.new", "Claude", "ChatGPT"],
+    },
+    {
+      label: "Industry Standard Tools",
+      items: ["Figma", "FigJam", "Miro", "Adobe Illustrator", "Adobe Photoshop", "Premier Pro"],
+    },
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },

@@ -51,21 +51,25 @@ export default function Page() {
         </div>
       </section>
       <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-2">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                  {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
-                  <span className="text-foreground text-sm font-medium">{skill.name}</span>
+        <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <div className="flex flex-col gap-6">
+            {DATA.skillCategories.map((category) => (
+              <div key={category.label} className="flex flex-col gap-3">
+                <h2 className="text-xl font-bold">{category.label}</h2>
+                <div className="flex flex-wrap gap-2">
+                  {category.items.map((item) => (
+                    <span
+                      key={item}
+                      className="inline-flex items-center rounded-full border border-border/60 bg-card px-3.5 py-1.5 text-xs font-medium text-foreground/80 ring-1 ring-inset ring-border/20 transition-colors hover:border-border hover:text-foreground"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
-              </BlurFade>
+              </div>
             ))}
           </div>
-        </div>
+        </BlurFade>
       </section>
       <section id="events">
         <div className="flex min-h-0 flex-col gap-y-4">
