@@ -35,6 +35,7 @@ export default function ProjectsSection() {
                         >
                             <ProjectCard
                                 href={project.href}
+                                slug={project.slug}
                                 key={project.title}
                                 title={project.title}
                                 description={project.description}

@@ -28,6 +28,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
 interface Props {
   title: string;
   href?: string;
+  slug?: string;
   description: string;
   dates: string;
   tags: readonly string[];
@@ -45,6 +46,7 @@ interface Props {
 export function ProjectCard({
   title,
   href,
+  slug,
   description,
   dates,
   tags,
@@ -62,12 +64,7 @@ export function ProjectCard({
       )}
     >
       <div className="relative shrink-0">
-        <Link
-          href={href || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
+        <Link href={slug ? `/projects/${slug}` : "#"} className="block">
           {video ? (
             <video
               src={video}
@@ -90,9 +87,7 @@ export function ProjectCard({
             <h3 className="font-semibold">{title}</h3>
           </div>
           <Link
-            href={href || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={slug ? `/projects/${slug}` : "#"}
             className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
             aria-label={`Open ${title}`}
           >

@@ -229,6 +229,7 @@ export const DATA = {
   projects: [
     {
       title: "3Nethra — Dubai EV Charging Station Surveillance",
+      slug: "dubai-ev",
       href: "",
       dates: "",
       active: true,
@@ -248,6 +249,7 @@ export const DATA = {
     },
     {
       title: "LEAP — AI Based Student Attendance for Andhra Government",
+      slug: "leap",
       href: "",
       dates: "",
       active: true,
@@ -267,6 +269,7 @@ export const DATA = {
     },
     {
       title: "Hybridchart Altitude — Patient Charge Capture & EHR Management",
+      slug: "altitude",
       href: "",
       dates: "",
       active: true,
@@ -286,11 +289,12 @@ export const DATA = {
     },
     {
       title: "3Nethra — Election Commission of India (ECI) Assam Election 2026",
+      slug: "3nethra-eci",
       href: "",
       dates: "",
       active: true,
       description:
-        "Designed the end-to-end UX for an AI-powered surveillance platform targeting B2B enterprise clients. Focused on real-time monitoring dashboards, alert management, and role-based access flows that reduce operator cognitive load.",
+        "Designed the end-to-end UX for an AI-powered surveillance platform for the Election Commission of India, deployed during the Assam Election 2026. Focused on real-time monitoring dashboards, alert management, and role-based access flows that reduce operator cognitive load.",
       technologies: [
         "User Research",
         "Wireframing",
