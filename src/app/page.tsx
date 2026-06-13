@@ -60,7 +60,7 @@ export default function Page() {
                   {category.items.map((item) => (
                     <span
                       key={item}
-                      className="inline-flex items-center rounded-full border border-border/60 bg-card px-3.5 py-1.5 text-xs font-medium text-foreground/80 ring-1 ring-inset ring-border/20 transition-colors hover:border-border hover:text-foreground"
+                      className="inline-flex items-center rounded-full border border-border/60 bg-card px-3.5 py-1.5 text-sm font-medium text-foreground/80 ring-1 ring-inset ring-border/20 transition-colors hover:border-border hover:text-foreground"
                     >
                       {item}
                     </span>
