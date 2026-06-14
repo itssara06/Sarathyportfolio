@@ -227,6 +227,47 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "HybridChart Altitude — Enterprise Healthcare Operations Platform",
+      slug: "altitude",
+      href: "",
+      dates: "",
+      active: true,
+      description:
+        "Enterprise healthcare operations platform used by hospitals and billing teams to manage charge capture, billing workflows, user administration, and practice performance.",
+      longDescription:
+        "HybridChart Altitude is an enterprise healthcare operations and revenue cycle management platform that helps healthcare organizations manage multiple physician groups, practices, and facilities from a single centralized system. The platform provides administrators, billing teams, and healthcare leaders with real-time visibility into operational performance, user management, billing workflows, and revenue-related activities. By unifying fragmented healthcare operations into one platform, Altitude enables organizations to streamline workflows, improve efficiency, and make data-driven business decisions at scale.",
+      businessProblem: {
+        intro:
+          "Large healthcare organizations often manage multiple physician groups, facilities, and service lines.\n\nAs organizations scale, they face several challenges:",
+        painPoints: [
+          "Limited visibility across practices",
+          "Fragmented operational data",
+          "Complex billing workflows",
+          "Difficult user management",
+          "Time-consuming administrative processes",
+          "Revenue leakage caused by missed charges and workflow inefficiencies",
+        ],
+        outro:
+          "Leadership teams needed a way to monitor performance across all practices without switching between multiple systems.\n\nThe challenge was designing a platform that could present large amounts of operational data while remaining intuitive and actionable for different user groups.",
+      },
+      technologies: [
+        "Healthcare UX",
+        "B2B SaaS",
+        "EHR Design",
+        "Wireframing",
+        "Prototyping",
+        "Figma",
+      ],
+      links: [],
+      image: "",
+      video: "",
+      images: [
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+        "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
+      ],
+    },
+    {
       title: "3Nethra — Dubai EV Charging Station Surveillance",
       slug: "dubai-ev",
       href: "",
@@ -274,31 +315,6 @@ export const DATA = {
         "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
         "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
         "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
-      ],
-    },
-    {
-      title: "Hybridchart Altitude — Patient Charge Capture & EHR Management",
-      slug: "altitude",
-      href: "",
-      dates: "",
-      active: true,
-      description:
-        "Designed the UX for a healthcare SaaS product enabling physicians to capture patient charges and manage EHR workflows. Streamlined complex clinical data entry into intuitive flows, reducing documentation time and billing errors.",
-      technologies: [
-        "Healthcare UX",
-        "B2B SaaS",
-        "EHR Design",
-        "Wireframing",
-        "Prototyping",
-        "Figma",
-      ],
-      links: [],
-      image: "",
-      video: "",
-      images: [
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-        "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
-        "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
       ],
     },
     {

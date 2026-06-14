@@ -60,9 +60,37 @@ export default async function ProjectPage({
 
         {/* Description */}
         <p className="text-base text-muted-foreground leading-relaxed">
-          {project.description}
+          {"longDescription" in project && project.longDescription
+            ? project.longDescription
+            : project.description}
         </p>
       </div>
+
+      {/* Business Problem */}
+      {"businessProblem" in project && project.businessProblem && (
+        <div className="flex flex-col gap-6">
+          <h2 className="text-xl font-semibold tracking-tight">The Business Problem</h2>
+          <div className="flex flex-col gap-4 text-base text-muted-foreground leading-relaxed">
+            {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).intro
+              .split("\n\n")
+              .map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            <ul className="list-disc list-inside flex flex-col gap-2 pl-1">
+              {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).painPoints.map(
+                (point, i) => (
+                  <li key={i}>{point}</li>
+                )
+              )}
+            </ul>
+            {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).outro
+              .split("\n\n")
+              .map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+          </div>
+        </div>
+      )}
 
       {/* Contact note */}
       <div className="rounded-xl border border-border bg-muted/40 p-6 flex flex-col gap-4">
