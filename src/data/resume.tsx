@@ -61,7 +61,7 @@ export const DATA = {
       ],
     },
     {
-      label: "AI Tools I use to visualize ideas.",
+      label: "AI Tools I use to visualize & Iterate Ideas",
       items: ["Lovable.ai", "Google Stitch", "Bolt.new", "Claude", "ChatGPT"],
     },
     {
