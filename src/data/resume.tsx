@@ -110,9 +110,8 @@ export const DATA = {
       // },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:talktosarathy067@gmail.com?subject=Let's%20work%20together!",
         icon: Icons.email,
-
         navbar: false,
       },
     },

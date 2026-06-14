@@ -1,9 +1,16 @@
+"use client";
+
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { ArrowUpRight } from "lucide-react";
 
 const EMAIL = "talktosarathy067@gmail.com";
+const SUBJECT = "Let%27s%20work%20together%21";
 
 export default function ContactSection() {
+  const handleEmail = () => {
+    window.location.href = `mailto:${EMAIL}?subject=${SUBJECT}`;
+  };
+
   return (
     <footer className="rounded-2xl border border-border overflow-hidden">
       {/* CTA area */}
@@ -33,13 +40,13 @@ export default function ContactSection() {
             Open to product design roles, freelance projects, and creative collaborations.
           </p>
 
-          <a
-            href={`mailto:${EMAIL}`}
+          <button
+            onClick={handleEmail}
             className="group mt-2 inline-flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-80"
           >
             {EMAIL}
             <ArrowUpRight className="size-3.5 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </a>
+          </button>
         </div>
       </div>
 
