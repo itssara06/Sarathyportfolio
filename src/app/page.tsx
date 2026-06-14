@@ -67,7 +67,7 @@ export default function Page() {
             <h2 className="text-xl font-bold">In Room, On Stage, On workshops</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10.6}>
-            <p className="text-sm font-semibold">Designland - worksop</p>
+            <p className="text-sm font-semibold">Designland - workshop</p>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10.7}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">

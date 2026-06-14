@@ -66,7 +66,7 @@ export const DATA = {
     },
     {
       label: "Industry Standard Tools",
-      items: ["Figma", "FigJam", "Miro", "Adobe Illustrator", "Adobe Photoshop", "Premier Pro"],
+      items: ["Figma", "FigJam", "Miro", "Adobe Illustrator", "Adobe Photoshop", "Premiere Pro"],
     },
   ],
   navbar: [
