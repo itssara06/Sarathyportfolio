@@ -131,6 +131,37 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="figma-config-chennai">
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 11.0}>
+            <p className="text-sm font-semibold">Figma Config - Chennai</p>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 11.1}>
+            <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
+              <div className="relative h-52 md:h-auto col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-muted">
+                <img src="/figma-config-2.jpg" alt="Figma Config Chennai Keynote" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Keynote</span>
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 md:row-span-2 rounded-xl overflow-hidden bg-muted">
+                <img src="/figma-config-3.jpg" alt="AI First Thinking" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">AI First Thinking</span>
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/figma-config-1.jpg" alt="Design Workshop" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Design Workshop</span>
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/figma-config-4.jpg" alt="Config Talk" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Config Talk</span>
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/figma-config-5.jpg" alt="Full House" className="w-full h-full object-cover" />
+                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Full House</span>
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
