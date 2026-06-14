@@ -90,12 +90,12 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      Dribbble: {
-        name: "Dribbble",
-        url: "https://dribbble.com/sarathy06",
-        icon: Dribbble,
-        navbar: true,
-      },
+      // Dribbble: {
+      //   name: "Dribbble",
+      //   url: "https://dribbble.com/sarathy06",
+      //   icon: Dribbble,
+      //   navbar: true,
+      // },
       // X: {
       //   name: "X",
       //   url: "https://dub.sh/dillion-twitter",
