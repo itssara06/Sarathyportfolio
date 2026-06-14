@@ -74,27 +74,22 @@ export default function Page() {
               {/* Asli Creativity stage — full width on mobile, 2×2 hero on desktop */}
               <div className="relative h-52 md:h-auto col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-4.jpg" alt="Asli Creativity" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Asli Creativity</span>
               </div>
               {/* Aaquib Wani — half width on mobile, tall on desktop */}
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-2 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-1.jpg" alt="Aaquib Wani" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Aaquib Wani</span>
               </div>
               {/* Audience — half width on mobile */}
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-3.jpg" alt="Audience" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">In the Room</span>
               </div>
               {/* Goodies — half width on mobile */}
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-6.jpg" alt="Goodies" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Goodies</span>
               </div>
               {/* VIP badge — half width on mobile */}
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/event-5.jpg" alt="Asli VIP" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Asli VIP</span>
               </div>
             </div>
           </BlurFade>
@@ -109,23 +104,18 @@ export default function Page() {
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-2 md:h-[380px]">
               <div className="relative h-40 md:h-auto col-span-2 md:col-span-2 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-2.jpg" alt="Group Photo" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Workshop</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-2 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-4.jpg" alt="Presenter" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Event Photos</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-3.jpg" alt="Banner" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">UI/UX Hyderabad</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-1.jpg" alt="Badge" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Idea to Prototype</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-2 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-5.jpg" alt="Certificate" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Certificate</span>
               </div>
             </div>
           </BlurFade>
@@ -140,23 +130,18 @@ export default function Page() {
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
               <div className="relative h-52 md:h-auto col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-2.jpg" alt="Figma Config Chennai Keynote" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Keynote</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-2 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-3.jpg" alt="AI First Thinking" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">AI First Thinking</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-1.jpg" alt="Design Workshop" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Design Workshop</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-4.jpg" alt="Config Talk" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Config Talk</span>
               </div>
               <div className="relative h-40 md:h-auto col-span-1 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-5.jpg" alt="Full House" className="w-full h-full object-cover" />
-                <span className="absolute bottom-2 left-2 text-sm font-bold text-white drop-shadow">Full House</span>
               </div>
             </div>
           </BlurFade>
