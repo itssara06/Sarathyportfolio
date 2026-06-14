@@ -4,8 +4,49 @@
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+
+function SlidingThumbnail({ images, alt }: { images: readonly string[]; alt: string }) {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  return (
+    <div className="relative w-full h-64 md:h-80 overflow-hidden bg-muted">
+      {images.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt={alt}
+          className={cn(
+            "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
+            i === current ? "opacity-100" : "opacity-0"
+          )}
+        />
+      ))}
+      {images.length > 1 && (
+        <div className="absolute bottom-2 right-2 flex gap-1">
+          {images.map((_, i) => (
+            <span
+              key={i}
+              className={cn(
+                "block size-1.5 rounded-full transition-all duration-300",
+                i === current ? "bg-white scale-125" : "bg-white/50"
+              )}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function ProjectImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
@@ -33,6 +74,7 @@ interface Props {
   tags: readonly string[];
   link?: string;
   image?: string;
+  images?: readonly string[];
   video?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -51,6 +93,7 @@ export function ProjectCard({
   tags,
   link,
   image,
+  images,
   video,
   links,
   className,
@@ -75,6 +118,8 @@ export function ProjectCard({
             playsInline
             className="w-full h-64 md:h-80 object-cover"
           />
+        ) : images && images.length > 0 ? (
+          <SlidingThumbnail images={images} alt={title} />
         ) : image ? (
           <ProjectImage src={image} alt={title} />
         ) : (

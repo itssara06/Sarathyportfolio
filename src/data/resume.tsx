@@ -246,6 +246,11 @@ export const DATA = {
       links: [],
       image: "",
       video: "",
+      images: [
+        "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+      ],
     },
     {
       title: "LEAP — AI Based Student Attendance for Andhra Government",
@@ -266,6 +271,11 @@ export const DATA = {
       links: [],
       image: "",
       video: "",
+      images: [
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
+      ],
     },
     {
       title: "Hybridchart Altitude — Patient Charge Capture & EHR Management",
@@ -286,6 +296,11 @@ export const DATA = {
       links: [],
       image: "",
       video: "",
+      images: [
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+        "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
+      ],
     },
     {
       title: "3Nethra — Election Commission of India (ECI) Assam Election 2026",
@@ -306,6 +321,11 @@ export const DATA = {
       links: [],
       image: "",
       video: "",
+      images: [
+        "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&q=80",
+        "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
+      ],
     },
   ],
   hackathons: [
