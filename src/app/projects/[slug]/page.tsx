@@ -98,19 +98,19 @@ export default async function ProjectPage({
         <div className="flex flex-col gap-6">
           <h2 className="text-xl font-semibold tracking-tight">The Business Problem</h2>
           <div className="flex flex-col gap-4 text-base text-muted-foreground leading-relaxed">
-            {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).intro
+            {(project.businessProblem as { intro: string; painPoints: readonly string[]; outro: string }).intro
               .split("\n\n")
               .map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
             <ul className="list-disc list-inside flex flex-col gap-2 pl-1">
-              {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).painPoints.map(
+              {(project.businessProblem as { intro: string; painPoints: readonly string[]; outro: string }).painPoints.map(
                 (point, i) => (
                   <li key={i}>{point}</li>
                 )
               )}
             </ul>
-            {(project.businessProblem as { intro: string; painPoints: string[]; outro: string }).outro
+            {(project.businessProblem as { intro: string; painPoints: readonly string[]; outro: string }).outro
               .split("\n\n")
               .map((p, i) => (
                 <p key={i}>{p}</p>
