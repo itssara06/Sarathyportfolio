@@ -59,12 +59,39 @@ export default async function ProjectPage({
         </h1>
 
         {/* Description */}
-        <p className="text-base text-muted-foreground leading-relaxed">
-          {"longDescription" in project && project.longDescription
+        <div className="flex flex-col gap-4 text-base text-muted-foreground leading-relaxed">
+          {("longDescription" in project && project.longDescription
             ? project.longDescription
-            : project.description}
-        </p>
+            : project.description
+          )
+            .split("\n\n")
+            .map((p: string, i: number) => (
+              <p key={i}>{p}</p>
+            ))}
+        </div>
       </div>
+
+      {/* Problem & Solution */}
+      {"problemSolution" in project && project.problemSolution && (
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-xl font-semibold tracking-tight">Problem</h2>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              {(project.problemSolution as { problem: string; solution: string }).problem}
+            </p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h2 className="text-xl font-semibold tracking-tight">Solution</h2>
+            <div className="flex flex-col gap-4 text-base text-muted-foreground leading-relaxed">
+              {(project.problemSolution as { problem: string; solution: string }).solution
+                .split("\n\n")
+                .map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Business Problem */}
       {"businessProblem" in project && project.businessProblem && (

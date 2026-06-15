@@ -268,13 +268,28 @@ export const DATA = {
       ],
     },
     {
-      title: "3Nethra — Dubai EV Charging Station Surveillance",
+      title: "UAEV – AI-Powered EV Charging Monitoring Platform",
       slug: "dubai-ev",
       href: "",
       dates: "",
       active: true,
       description:
         "Designed the UX for an AI-powered surveillance system monitoring EV charging infrastructure across Dubai. Crafted real-time station monitoring dashboards, fault detection alerts, and operator management flows tailored for smart city operations.",
+      businessProblem: {
+        intro:
+          "With the rapid growth of electric vehicle adoption across the UAE, charging operators faced challenges in managing a large network of charging stations spread across multiple locations.\n\nKey challenges included:",
+        painPoints: [
+          "Limited visibility into charging bay utilization across sites.",
+          "Vehicles occupying charging bays after charging completion.",
+          "Unauthorized parking and charging bay misuse.",
+          "Manual monitoring of charging station activity.",
+          "Difficulty identifying charger availability in real time.",
+          "Camera failures and obstructions affecting surveillance accuracy.",
+          "Lack of centralized reporting for operational performance.",
+        ],
+        outro:
+          "These issues reduced charger availability, impacted customer experience, and increased operational overhead.\n\nThe goal was to create a centralized AI-powered platform that could automatically monitor charging infrastructure, detect violations in real time, provide actionable insights, and help operators maximize charger utilization across the UAE.",
+      },
       technologies: [
         "Smart City UX",
         "Dashboard Design",
@@ -293,13 +308,21 @@ export const DATA = {
       ],
     },
     {
-      title: "LEAP — AI Based Student Attendance for Andhra Government",
+      title: "Government of Andhra Pradesh – LEAP Smart Attendance System",
       slug: "leap",
       href: "",
       dates: "",
       active: true,
       description:
-        "Led UX design for a government-scale AI attendance system deployed across schools in Andhra Pradesh. Designed simple, accessible interfaces for teachers and administrators, accounting for low digital literacy and varied device constraints.",
+        "Redesigned Andhra Pradesh's manual school attendance process into an AI-powered facial recognition workflow, reducing teacher effort and automating attendance reporting across government schools.",
+      longDescription:
+        "The Andhra Pradesh Government's LEAP (Learning Excellence in Andhra Pradesh) platform was already being used by government schools to manage student attendance. However, the attendance process remained largely manual, requiring teachers to mark each student's presence individually every day.\n\nOur team was tasked with reimagining this workflow and introducing an AI-powered attendance system that could automate attendance marking through classroom image recognition while integrating seamlessly into the existing LEAP ecosystem.",
+      problemSolution: {
+        problem:
+          "How might we reduce the time teachers spend on attendance management while maintaining accuracy and ensuring the solution can scale across thousands of government schools?",
+        solution:
+          "We designed an AI-powered Smart Attendance System within the LEAP mobile application.\n\nInstead of manually marking attendance, teachers capture classroom photographs and the system automatically identifies registered students using facial recognition technology.\n\nAttendance is generated automatically and presented to the teacher for verification before submission.",
+      },
       technologies: [
         "User Research",
         "Accessibility",
