@@ -275,6 +275,8 @@ export const DATA = {
       active: true,
       description:
         "Designed the UX for an AI-powered surveillance system monitoring EV charging infrastructure across Dubai. Crafted real-time station monitoring dashboards, fault detection alerts, and operator management flows tailored for smart city operations.",
+      longDescription:
+        "UAEV is a smart mobility platform built to help EV charging operators monitor and manage charging infrastructure across the UAE. The platform combines AI-powered video analytics, real-time monitoring, and operational intelligence to provide complete visibility into charging station performance and usage.\n\nUsing computer vision, the system automatically detects vehicle number plates, tracks charging bay occupancy, identifies overstaying vehicles, monitors charging behavior, detects operational violations, and alerts operators about camera obstructions or system issues. The platform also provides analytics dashboards, investigation tools, alert management workflows, and multi-site administration capabilities, enabling operators to optimize charger utilization, improve user experience, and maintain infrastructure efficiency at scale.",
       businessProblem: {
         intro:
           "With the rapid growth of electric vehicle adoption across the UAE, charging operators faced challenges in managing a large network of charging stations spread across multiple locations.\n\nKey challenges included:",
