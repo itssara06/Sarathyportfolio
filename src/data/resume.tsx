@@ -352,17 +352,20 @@ export const DATA = {
         "Enterprise security operations platform designed to automate surveillance monitoring, detect violations, manage incidents, and improve response times using AI-powered analytics.",
       businessProblem: {
         intro:
-          "Organizations managing hundreds of cameras and security personnel often face multiple operational and intelligence challenges.",
+          "Large organizations managing security operations across multiple sites often rely on separate systems for surveillance, parking management, attendance tracking, and incident handling.",
         painPoints: [
-          "Reactive Security Operations — Security teams rely on manual monitoring of CCTV feeds, causing delayed responses to threats and incidents.",
-          "Fragmented Security Systems — Parking management, attendance tracking, face recognition, and surveillance systems operate independently, creating operational silos.",
-          "High Monitoring Costs — Security personnel must continuously monitor camera feeds, leading to increased operational costs and human errors.",
-          "Lack of Real-Time Intelligence — Traditional CCTV systems record events but do not provide actionable insights or automated threat detection.",
-          "Inefficient Incident Handling — Security teams often lack structured workflows for escalating incidents and coordinating responses.",
-          "Poor Visibility into Security Operations — Management teams struggle to understand trends, violation patterns, camera health, and overall security performance.",
+          "Manual monitoring of hundreds of CCTV feeds",
+          "Delayed identification of security incidents",
+          "Fragmented security and operational workflows",
+          "Limited visibility across multiple locations",
+          "Time-consuming incident investigation processes",
+          "Lack of centralized monitoring and reporting",
+          "Inefficient parking and vehicle management",
+          "Difficulty tracking security staff performance",
+          "Slow escalation and response to critical events",
         ],
         outro:
-          "3Netra addresses these gaps by delivering a centralized intelligence platform that makes security operations proactive, connected, and easier to manage.",
+          "Security teams needed a unified platform that could provide real-time visibility, automate threat detection, and streamline operational workflows from a single command center.",
       },
       technologies: [
         "User Research",

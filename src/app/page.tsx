@@ -72,7 +72,7 @@ export default function Page() {
               <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
             </div>
             <div className="flex flex-col gap-y-3 items-center justify-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Designland - workshop</h2>
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Designland - workshop</h2>
             </div>
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 10.7}>
@@ -102,9 +102,9 @@ export default function Page() {
         </div>
       </section>
       <section id="workshop-itp">
-        <div className="flex min-h-0 flex-col gap-y-4">
+        <div className="flex min-h-0 flex-col gap-y-8">
           <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">UI/UX Hyderabad - workshop</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">UI/UX Hyderabad - workshop</h2>
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 10.95}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-2 md:h-[380px]">
@@ -128,9 +128,9 @@ export default function Page() {
         </div>
       </section>
       <section id="figma-config-chennai">
-        <div className="flex min-h-0 flex-col gap-y-4">
+        <div className="flex min-h-0 flex-col gap-y-8">
           <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Figma Config - Chennai</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Figma Config - Chennai</h2>
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 11.15}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">

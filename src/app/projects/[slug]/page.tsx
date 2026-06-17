@@ -2,6 +2,7 @@ import { DATA } from "@/data/resume";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Mail } from "lucide-react";
+import { CopyEmailButton } from "@/components/copy-email-button";
 
 const EMAIL = "talktosarathy067@gmail.com";
 
@@ -126,13 +127,16 @@ export default async function ProjectPage({
           <span className="font-medium text-foreground">Parthasarathy Shanmugam</span>{" "}
           to know more about the project.
         </p>
-        <a
-          href={`mailto:${EMAIL}`}
-          className="self-start inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-80"
-        >
-          <Mail className="size-4 shrink-0" />
-          {EMAIL}
-        </a>
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href={`mailto:${EMAIL}`}
+            className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-80"
+          >
+            <Mail className="size-4 shrink-0" />
+            {EMAIL}
+          </a>
+          <CopyEmailButton email={EMAIL} />
+        </div>
       </div>
     </main>
   );
