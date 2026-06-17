@@ -62,13 +62,19 @@ export default function Page() {
         </BlurFade>
       </section>
       <section id="events">
-        <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
-            <h2 className="text-xl font-bold">In Room, On Stage, On workshops</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10.6}>
-            <p className="text-sm font-semibold">Designland - workshop</p>
-          </BlurFade>
+        <div className="flex min-h-0 flex-col gap-y-8">
+          <div className="flex flex-col gap-y-4 items-center justify-center">
+            <div className="flex items-center w-full">
+              <div className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent" />
+              <div className="border bg-primary z-10 rounded-xl px-4 py-1">
+                <span className="text-background text-sm font-medium">Beyond My Day Job</span>
+              </div>
+              <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
+            </div>
+            <div className="flex flex-col gap-y-3 items-center justify-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Designland - workshop</h2>
+            </div>
+          </div>
           <BlurFade delay={BLUR_FADE_DELAY * 10.7}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
               {/* Asli Creativity stage — full width on mobile, 2×2 hero on desktop */}
@@ -97,10 +103,10 @@ export default function Page() {
       </section>
       <section id="workshop-itp">
         <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 10.8}>
-            <p className="text-sm font-semibold">UI/UX Hyderabad - workshop</p>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10.9}>
+          <div className="flex flex-col gap-y-3 items-center justify-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">UI/UX Hyderabad - workshop</h2>
+          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 10.95}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-2 md:h-[380px]">
               <div className="relative h-40 md:h-auto col-span-2 md:col-span-2 md:row-span-1 rounded-xl overflow-hidden bg-muted">
                 <img src="/itp-2.jpg" alt="Group Photo" className="w-full h-full object-cover" />
@@ -123,10 +129,10 @@ export default function Page() {
       </section>
       <section id="figma-config-chennai">
         <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 11.0}>
-            <p className="text-sm font-semibold">Figma Config - Chennai</p>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 11.1}>
+          <div className="flex flex-col gap-y-3 items-center justify-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Figma Config - Chennai</h2>
+          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 11.15}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
               <div className="relative h-52 md:h-auto col-span-2 md:row-span-2 rounded-xl overflow-hidden bg-muted">
                 <img src="/figma-config-2.jpg" alt="Figma Config Chennai Keynote" className="w-full h-full object-cover" />

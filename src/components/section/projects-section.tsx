@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
                         />
                         <div className="border bg-primary z-10 rounded-xl px-4 py-1">
-                            <span className="text-background text-sm font-medium">My Projects</span>
+                            <span className="text-background text-sm font-medium">Selected Projects</span>
                         </div>
                         <div
                             className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent"
