@@ -343,13 +343,27 @@ export const DATA = {
       ],
     },
     {
-      title: "3Nethra — Election Commission of India (ECI) Assam Election 2026",
+      title: "3Netra – AI-Powered Surveillance & Security Intelligence Platform",
       slug: "3nethra-eci",
       href: "",
       dates: "",
       active: true,
       description:
-        "Designed the end-to-end UX for an AI-powered surveillance platform for the Election Commission of India, deployed during the Assam Election 2026. Focused on real-time monitoring dashboards, alert management, and role-based access flows that reduce operator cognitive load.",
+        "Enterprise security operations platform designed to automate surveillance monitoring, detect violations, manage incidents, and improve response times using AI-powered analytics.",
+      businessProblem: {
+        intro:
+          "Organizations managing hundreds of cameras and security personnel often face multiple operational and intelligence challenges.",
+        painPoints: [
+          "Reactive Security Operations — Security teams rely on manual monitoring of CCTV feeds, causing delayed responses to threats and incidents.",
+          "Fragmented Security Systems — Parking management, attendance tracking, face recognition, and surveillance systems operate independently, creating operational silos.",
+          "High Monitoring Costs — Security personnel must continuously monitor camera feeds, leading to increased operational costs and human errors.",
+          "Lack of Real-Time Intelligence — Traditional CCTV systems record events but do not provide actionable insights or automated threat detection.",
+          "Inefficient Incident Handling — Security teams often lack structured workflows for escalating incidents and coordinating responses.",
+          "Poor Visibility into Security Operations — Management teams struggle to understand trends, violation patterns, camera health, and overall security performance.",
+        ],
+        outro:
+          "3Netra addresses these gaps by delivering a centralized intelligence platform that makes security operations proactive, connected, and easier to manage.",
+      },
       technologies: [
         "User Research",
         "Wireframing",
