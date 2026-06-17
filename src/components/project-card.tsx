@@ -4,10 +4,19 @@
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+import { useEffect, useState } from "react";
+import { ProjectThumbnail } from "@/components/project-thumbnail";
 
-function SlidingThumbnail({ images, alt }: { images: readonly string[]; alt: string }) {
+function SlidingThumbnail({
+  images,
+  alt,
+  contain,
+}: {
+  images: readonly string[];
+  alt: string;
+  contain?: boolean;
+}) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -26,7 +35,8 @@ function SlidingThumbnail({ images, alt }: { images: readonly string[]; alt: str
           src={src}
           alt={alt}
           className={cn(
-            "absolute inset-0 w-full h-full object-cover transition-opacity duration-700",
+            "absolute inset-0 w-full h-full transition-opacity duration-700",
+            contain ? "object-contain" : "object-cover",
             i === current ? "opacity-100" : "opacity-0"
           )}
         />
@@ -48,7 +58,15 @@ function SlidingThumbnail({ images, alt }: { images: readonly string[]; alt: str
   );
 }
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectImage({
+  src,
+  alt,
+  contain,
+}: {
+  src: string;
+  alt: string;
+  contain?: boolean;
+}) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
@@ -59,7 +77,10 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="w-full h-64 md:h-80 object-cover"
+      className={cn(
+        "w-full h-64 md:h-80 transition-all",
+        contain ? "object-contain" : "object-cover"
+      )}
       onError={() => setImageError(true)}
     />
   );
@@ -108,7 +129,7 @@ export function ProjectCard({
         className
       )}
     >
-      <div className="shrink-0">
+      <div className="shrink-0 h-64 md:h-80">
         {video ? (
           <video
             src={video}
@@ -116,14 +137,15 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="w-full h-64 md:h-80 object-cover"
+            className="w-full h-full object-cover"
           />
-        ) : images && images.length > 0 ? (
-          <SlidingThumbnail images={images} alt={title} />
-        ) : image ? (
-          <ProjectImage src={image} alt={title} />
         ) : (
-          <div className="w-full h-64 md:h-80 bg-muted" />
+          <ProjectThumbnail
+            images={images}
+            image={image}
+            alt={title}
+            contain={slug === "3nethra-eci"}
+          />
         )}
       </div>
       <div className="p-6 flex flex-col gap-3 flex-1">

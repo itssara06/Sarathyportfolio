@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Mail } from "lucide-react";
 import { CopyEmailButton } from "@/components/copy-email-button";
+import { ProjectThumbnail } from "@/components/project-thumbnail";
 
 const EMAIL = "talktosarathy067@gmail.com";
 
@@ -42,14 +43,14 @@ export default async function ProjectPage({
             playsInline
             className="w-full h-full object-cover"
           />
-        ) : project.image ? (
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
         ) : (
-          <div className="w-full h-full bg-muted" />
+          <ProjectThumbnail
+            images={project.images}
+            image={project.image}
+            alt={project.title}
+            contain={project.slug === "3nethra-eci"}
+            className="h-full"
+          />
         )}
       </div>
 
