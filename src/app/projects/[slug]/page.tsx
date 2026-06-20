@@ -49,6 +49,10 @@ export default async function ProjectPage({
             image={project.image}
             alt={project.title}
             contain={project.slug === "3nethra-eci" || project.slug === "leap"}
+          />
+        )}
+      </div>
+
       {/* Title */}
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl leading-tight">
