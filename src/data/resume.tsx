@@ -259,12 +259,11 @@ export const DATA = {
         "Figma",
       ],
       links: [],
-      image: "",
+      image: "/altitude-1.png",
       video: "",
       images: [
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-        "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
-        "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80",
+        "/altitude-1.png",
+        "/altitude-2.png",
       ],
     },
     {
