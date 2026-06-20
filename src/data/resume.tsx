@@ -334,12 +334,11 @@ export const DATA = {
         "Usability Testing",
       ],
       links: [],
-      image: "",
+      image: "/leap-face-1.png",
       video: "",
       images: [
-        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
-        "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
+        "/leap-face-1.png",
+        "/leap-2.png",
       ],
     },
     {

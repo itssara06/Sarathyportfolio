@@ -144,7 +144,7 @@ export function ProjectCard({
             images={images}
             image={image}
             alt={title}
-            contain={slug === "3nethra-eci"}
+            contain={slug === "3nethra-eci" || slug === "leap"}
           />
         )}
       </div>
