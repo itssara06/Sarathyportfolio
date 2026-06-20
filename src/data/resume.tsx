@@ -304,9 +304,9 @@ export const DATA = {
       links: [],
       video: "",
       images: [
-        "/uaev-1.jpg",
-        "/uaev-2.jpg",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+        "/uaev-1.png",
+        "/uaev-2.png",
+        "/uaev-3.png",
       ],
     },
     {

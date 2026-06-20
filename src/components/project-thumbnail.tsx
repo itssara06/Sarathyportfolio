@@ -20,6 +20,7 @@ export function ProjectThumbnail({
 }: ProjectThumbnailProps) {
   const [current, setCurrent] = useState(0);
   const safeImages = images?.length ? images : image ? [image] : [];
+  const shouldContain = contain !== false;
 
   useEffect(() => {
     if (safeImages.length <= 1) return;
@@ -42,7 +43,7 @@ export function ProjectThumbnail({
         alt={alt}
         className={cn(
           "w-full h-full transition-all",
-          contain ? "object-contain" : "object-cover",
+          shouldContain ? "object-contain" : "object-cover",
           className
         )}
       />
@@ -58,7 +59,7 @@ export function ProjectThumbnail({
           alt={alt}
           className={cn(
             "absolute inset-0 w-full h-full transition-opacity duration-700",
-            contain ? "object-contain" : "object-cover",
+            shouldContain ? "object-contain" : "object-cover",
             i === current ? "opacity-100" : "opacity-0"
           )}
         />

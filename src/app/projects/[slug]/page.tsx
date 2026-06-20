@@ -48,7 +48,7 @@ export default async function ProjectPage({
             images={project.images}
             image={project.image}
             alt={project.title}
-            contain={project.slug === "3nethra-eci" || project.slug === "leap"}
+            contain={project.slug === "3nethra-eci" || project.slug === "leap" || project.slug === "dubai-ev"}
           />
         )}
       </div>
