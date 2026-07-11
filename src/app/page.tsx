@@ -9,10 +9,10 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="min-h-dvh flex flex-col gap-14 relative">
+    <main suppressHydrationWarning className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="flex flex-col gap-4 md:gap-8">
+        <div suppressHydrationWarning className="mx-auto w-full max-w-2xl space-y-8">
+          <div suppressHydrationWarning className="flex flex-col gap-4 md:gap-8">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-24 md:size-28 border rounded-full shadow-lg ring-4 ring-muted">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
@@ -71,9 +71,48 @@ export default function Page() {
               </div>
               <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
             </div>
-            <div className="flex flex-col gap-y-3 items-center justify-center">
-              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Designland - workshop</h2>
+          </div>
+        </div>
+      </section>
+      <section id="config2026-hyderabad">
+        <div className="flex min-h-0 flex-col gap-y-8">
+          <div className="flex flex-col gap-y-3 items-center justify-center">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Config2026 - Hyderabad</h2>
+          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 10.85}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:h-[400px]">
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-8.jpg" alt="Config2026 Event 8" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-7.jpg" alt="Config2026 Event 7" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-6.jpg" alt="Config2026 Event 6" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-5.jpg" alt="Config2026 Event 5" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-4.jpg" alt="Config2026 Event 4" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-3.jpg" alt="Config2026 Event 3" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-2.jpg" alt="Config2026 Event 2" className="w-full h-full object-cover" />
+              </div>
+              <div className="relative h-40 md:h-auto col-span-1 rounded-xl overflow-hidden bg-muted">
+                <img src="/config2026-1.jpg" alt="Config2026 Event 1" className="w-full h-full object-cover" />
+              </div>
             </div>
+          </BlurFade>
+        </div>
+      </section>
+      <section id="designland-workshop">
+        <div className="flex min-h-0 flex-col gap-y-8">
+          <div className="flex flex-col gap-y-3 items-center justify-center">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Designland - workshop</h2>
           </div>
           <BlurFade delay={BLUR_FADE_DELAY * 10.7}>
             <div className="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-2 md:h-[520px]">
